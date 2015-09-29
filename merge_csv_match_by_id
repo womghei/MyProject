@@ -1,0 +1,5 @@
+import pandas
+csv1 = pandas.read_csv('test1.csv')
+csv2 = pandas.read_csv('test2.csv')
+merged = csv1.merge(csv2, on='ID')
+merged.to_csv("test_output.csv", index=False)
